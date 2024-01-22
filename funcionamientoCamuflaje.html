@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como funciona el camuflaje</title>
+    <link rel="stylesheet" href="./CSS/estiloWEB.css">
+</head>
+<style>
+    .section1{
+        float: left;
+        margin-left: 44px;
+    }
+    .section2{
+        float: left;
+        margin-left: 44px;
+    }
+    .donacion{
+        margin-left: 44px;
+    }
+
+    .section0 h1, .section0 p{
+        margin-left: 50px;
+    }
+    .tablaFuncionCamo img{
+        width: 200px;   
+    }
+
+    .añadido{
+        float: left;
+    }
+    .añadido h1{
+        float: left;
+        text-align: center;
+    }
+    .añadido img{
+        width: 150px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Hola a todos y bienvenidos a la calculadora de camuflaje</h1> 
+    </header>
+    <nav>
+        <li><a href="./index.html">Home</a></li>
+            <li><a href="./Camuflaje/calculoCAMUFLAJE.html">Calculadora</a></li>
+            <li><a href="./funcionamientoCamuflaje.html">Como funciona el camuflaje</a></li>
+            <li id="twitch"><a href="https://www.twitch.tv/luxius_42" target="_blank"><img src="./Imagenes/twitch.png">
+                Luxius42</a></li>
+            <li id="youtube"><a href="https://www.youtube.com/channel/UCW0sHdIHL7P7uSPIzh90PaA" target="_blank"><img src="./Imagenes/Youtube.png">
+                Luxius42</a></li>
+    </nav>
+
+    <section class="section0">
+        <h1>Sobre el camuflaje:</h1>
+            <p>Los valores de camuflaje en world of tanks son un tema muy importante en este juego, <a href="./Camuflaje/calculoCAMUFLAJE.html">aquí</a> tendrás una calculadora con los
+                valores exactos de la proximidad con la que serás descubierto. 
+            </p>
+    </section>
+
+    <div class="contenedor">
+        <section>
+            <section class="section1">
+                <h2>Valores CAMUFLAJE</h2>
+                <p>En esta tabla verás los puntos de camuflaje que te suma la red por un lado,<br> y por otro lado los puntos que suma
+                    si tienes pintado el chasis <br>
+                    (ESTE VALOR APARECE EN COLOR VERDE EN ESTA TABLA)
+                </p>
+                <table class="tablaFuncionCamo">
+                    <tr>
+                        <th colspan="5">Efectos de la RED CAMUFLAJE/PINTURA CAMUFLAJE</th>
+                    </tr>
+                    <tr>
+                        <th>Pesados</th>
+                        <th>AntiTanques</th>
+                        <th>Ligeros</th>
+                        <th>Artilleria</th>
+                        <th>Medios</th>
+                    </tr>
+                    <tr>
+                        <td>+5/<span>+2</span></td>
+                        <td>+15/<span>+4</span></td>
+                        <td>+10/<span>+3</span></td>
+                        <td>+5/<span>+2</span></td>
+                        <td>+10/<span>+3</span></td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section class="section2">
+                <h2>Como funcionan los arbustos</h2>
+                <p>En esta tabla verás los puntos de camuflaje que te suma los arbustos <br>
+                    siendo; Arbustos pequeños 25puntos y Grandes 50 puntos
+                </p>
+                <table class="tablaFuncionCamo">
+                    <tr>
+                        <th colspan="5">Efectos de Arbustos</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><img src="./Imagenes/ArbustoFino.PNG" ><br>ArbustoFino</th>
+                        <th colspan="3"><img src="./Imagenes/ArbustoGrueso.PNG" ><br>ArbustoGrueso</th>
+                    </tr>
+                    <tr>
+                        <th>2 FINOS</th>
+                        <th>1 GRUESO Y 2 FINOS</th>
+                        <th>3 FINOS</th>
+                        <th>1 GRUESO Y 2 FINOS</th>
+                        <th>4 FINOS</th>
+                    </tr>
+                    <tr>
+                        <td><span>+50</span></td>
+                        <td><span>+75</span></td>
+                        <td><span>+75</span></td>
+                        <td><span>+80</span></td>
+                        <td><span>+80</span></td>
+                    </tr>
+                </table>
+            </section>
+            
+        </section>
+
+        <aside class="donacion">
+            <h1>Si quieres apoyarme, clica en la siguiente imagen</h1>
+            <a href="https://streamelements.com/luxius_42/tip" target="_blank"><img src="./Imagenes/KratosDonando.jfif" alt="kratosMAJO"></a>
+        </aside>
+
+        <div class="añadido">
+            <section>
+                <h1><img src="./Imagenes/ArbolFino.PNG"><br>Ejemplo de Árbol FINO</h1>
+                <h1><img src="./Imagenes/ArbolGrueso.PNG"><br>Ejemplo de Árbol GRUESO</h1>
+                <h1>Notas: </h1>
+                <p>Recuerda, tanto los edificios como los árboles dan camuflaje. Si estás detrás de un edificio
+                    y no has sido descubierto, tu camuflaje será del <strong>100%</strong>. Puedes utilizar los
+                    árboles como cobertura, funcionan exactamente igual que los arbustos, trata de tirar cuantos 
+                    te hagan falta. ¡¡PERO CUIDADO!!, Los enemigos dispararán al ver caer árboles por la zona...
+                </p>
+            </section>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>

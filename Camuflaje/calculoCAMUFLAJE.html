@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../CSS/estiloWEB.css">
+    <title>Camuflaje WOT</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la web del Camuflaje</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./calculoCAMUFLAJE.html">Calculadora</a></li>
+            <li><a href="../funcionamientoCamuflaje.html">Como funciona el camuflaje</a></li>
+            <li id="twitch"><a href="https://www.twitch.tv/luxius_42" target="_blank"><img src="../Imagenes/twitch.png">
+                Luxius42</a></li>
+            <li id="youtube"><a href="https://www.youtube.com/channel/UCW0sHdIHL7P7uSPIzh90PaA" target="_blank"><img src="../Imagenes/Youtube.png">
+                Luxius42</a></li>
+            
+            <!-- https://wiki.wargaming.net/en/Battle_Mechanics#Camouflage -->
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <section>
+            <form class="formulario">
+                <table>
+                    <tr>
+                        <th>Vehículo en parado</th>
+                        <th>Vehículo en movimiento</th>
+                        <th>Vision del SPOTTER</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../Imagenes/ValorParado.png">
+                            <label for="stationary">Introduce el valor de ocultacion EN PARADO:</label>
+                            <input type="text" name="stationary" id="stationary" placeholder="Ej: 16,87" required>
+                        </td>
+                        <td>
+                            <img src="../Imagenes/ValorMovimiento.png">
+                            <label for="moving">Introduce el valor de ocultacion EN MOVIMIENTO:</label>
+                            <input type="text" name="moving" id="moving" placeholder="Ej: 12,65" required>
+                        </td>
+                        <td>
+                            <img src="../Imagenes/AlcanceVision.PNG">
+                            <label for="spotting">Introduce el valor del SPOTTER</label>
+                            <input type="text" name="spotting" id="spotting" placeholder="Ej: 450" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../Imagenes/ValorParadoDisp1.png" >
+                            <label for="aftShoot1">Tras disparar <strong>PARADO</strong></label>
+                            <input type="text" name="aftShoot1" id="aftShoot1" placeholder="Ej: 3,34" required>
+                        </td>
+                        <td>
+                            <img src="../Imagenes/ValorMovimientoDisp2.png">
+                            <label for="aftShoot2">Tras disparar <strong>MOVIMIENTO</strong></label>
+                            <input type="text" name="aftShoot2" id="aftShoot2" placeholder="Ej: 2,51" required>
+                        </td>
+
+                        <td><img src="../Imagenes/Vehiculo de muestra.PNG"></td>
+                    </tr>
+                    <tr class="cvs">
+                        <td>
+                            <label for="cvs20">Sistema de Vision del Comandante(CVS)<strong> en SLOT DE SCOUT </strong> </label>
+                            <img src="../Imagenes/CVSEnSlot.png" alt="CVSSLot">
+                            <input type="radio" name="cvsOption" id="cvs20" onchange="actualizarTabla()">
+                        </td>
+                        <td>
+                            <label for="cvs15">Sistema de Vision del Comandante (CVS)<strong> FUERA DEL SLOT DE SCOUT</strong></label>
+                            <img src="../Imagenes/CVSFueraSlot.png" alt="CVSSLot">
+                            <input type="radio" name="cvsOption" id="cvs15" onchange="actualizarTabla()">
+                        </td>
+                        <td>
+                            <label for="cvsNull">Sistema de Vision del Comandante (CVS)<strong> SIN VISOR EN EQUIPAMIENTO</strong></label>
+                            <img src="../Imagenes/Vehiculo de muestraSINNADA.PNG">
+                            <input type="radio" name="cvsOption" id="cvsNull" onchange="actualizarTabla()">
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <div>    
+        <aside class="donacion">  
+            <table>
+                <tr>
+                    <th colspan="2">Leyenda</th>
+                </tr>
+                <tr>
+                    <td><strong>"camo"</strong></td>
+                    <td>Es el valor de camuflaje que te dan los arbustos</td>
+                </tr>
+                <tr>
+                    <td><strong>"80-75-50-etc.."</strong> </td>
+                    <td>Son valores de cómo de a cubierto estás, esa información se encuentra <a href="../funcionamientoCamuflaje.html">AQUÍ</a></td>
+                </tr>
+                <tr>
+                    <td><strong>"P"</strong></td>
+                    <td>Es el valor de camuflaje que te dan los arbustos</td>
+                </tr>
+                <tr>
+                    <td><strong>"F1"</strong></td>
+                    <td>Es el valor de camuflaje que te dan los arbustos</td>
+                </tr>
+                <tr>
+                    <td><strong>"M"</strong></td>
+                    <td>Es el valor de camuflaje que te dan los arbustos</td>
+                </tr>
+                <tr>
+                    <td><strong>"F2"</strong></td>
+                    <td>Es el valor de camuflaje que te dan los arbustos</td>
+                </tr>
+            </table>
+
+            <h1>Si quieres apoyarme, clica en la siguiente imagen</h1>
+            <a href="https://streamelements.com/luxius_42/tip" target="_blank"><img src="../Imagenes/KratosDonando.jfif" alt="kratosMAJO"></a>
+        </aside>
+    </div>
+
+    <div id="tablaGenerada"></div>
+    <script src="../JSS/camuflaje.js"></script>
+</body>
+</html>

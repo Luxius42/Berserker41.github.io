@@ -1,0 +1,158 @@
+body{
+    background-color: grey;
+}
+header h1{
+    text-align: center;
+}
+
+.contenedor{
+    float: left;
+}
+
+    /* ESTILOS BARRA NAVEGACION*/
+nav{
+    background-color: black;
+}
+li{
+    display: inline;
+    padding: 40px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+li a:hover{
+    color: orange;
+}
+
+section{
+    margin-left: 2px;
+    
+}
+/* Estilos para donaciones*/
+
+.donacion{
+    float: right;
+    width: 200px;
+    margin: 4px;
+    text-align: center
+}
+
+/* Estilo para el texto del marcador de posición */
+::placeholder {
+    color: #999; /* Puedes ajustar el color según tus preferencias */
+    }
+
+/* Estilo para el texto del input cuando está enfocado */
+:focus::placeholder {
+  color: transparent; /* Hace que el texto del marcador de posición sea transparente cuando el input está enfocado */
+}
+.formulario{
+    margin-right: 10%;
+}
+
+
+/*Estilo para boton*/
+.formulario button{
+    margin-left: 33.5%;
+    width: 400px;
+    height: 30px;
+    color: white;
+    background-color: black;
+}
+
+.formulario button:hover{
+    color: red;
+    background-color: bisque;
+}
+/* Estilo para la tabla */
+table {
+  border-collapse: collapse;
+}
+
+/* Estilo para las celdas de la tabla */
+th{
+    text-align: center;
+    padding: 2px;
+    border: 5px solid #ddd;
+}
+td {
+    text-align: center;
+    padding: 2px;
+    border: 5px solid #ddd;
+}
+
+.tablaIndex{
+    font-weight: bold;
+}
+
+.tablaFuncionCamo{
+    font-weight: bold;
+}
+
+.tablaFuncionCamo span{
+    color: rgb(105, 224, 105);
+}
+/** Estilo imagen **/
+img{
+    width: 200px;
+}
+
+.formulario .cvs img{
+    height: 80px;
+}
+
+/* Estilo para las etiquetas de la tabla */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#tablaGenerada{
+    margin-left: 20%;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    float: right;
+    margin-left: 6%;
+}
+
+
+#tablaGenerada .parado .segundo-td-estilo{
+    font-weight: bold;
+    background-color: rgb(168, 235, 168);
+    width: 200px;
+}
+
+#tablaGenerada .paradodisparo15mtrasarbusto .segundo-td-estilo{
+    
+    font-weight: bold;
+    background-color: rgb(183, 207, 137);
+    width: 200px;
+}
+#tablaGenerada .movimiento .segundo-td-estilo{
+
+    font-weight: bold;
+    background-color: rgb(235, 204, 147);
+    width: 200px;
+}
+#tablaGenerada .movimientodisparo .segundo-td-estilo{
+
+    font-weight: bold;
+    background-color: rgb(230, 159, 159);
+    width: 200px;
+}
+
+/* Estilos para Twitch y Youtube*/
+
+ #youtube img{
+    width: 30px;
+}
+
+#twitch img{
+    width: 30px;
+}
